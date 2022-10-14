@@ -1,16 +1,28 @@
 public class CustomerManager {
-    public void Add(){
-        System.out.println("Musteri eklendi");
-    }
-    public void Remove(){
-        System.out.println("Musteri silindi");
-    }
-    public void Update(){
-        System.out.println("Musteri guncellendi");
+    private Customer customer;
+    private ICreditManager creditManager;
+
+    public CustomerManager(Customer customer, ICreditManager creditManager) {
+        this.customer = customer;
+        this.creditManager = creditManager;
+
     }
 
-    public static void main(String[] args) {
-        CustomerManager customerManager = new CustomerManager();
-        customerManager.Add();
+
+    public CustomerManager(Customer customer) {
+    }
+
+    public void save() {
+        System.out.println("Müşteri kaydedildi: ");
+    }
+
+    public void delete() {
+        System.out.println("Müşteri silindi: ");
+    }
+
+    public void giveCredit() {
+        creditManager.calculate();
+        System.out.println("Kredi verildi.");
+
     }
 }
