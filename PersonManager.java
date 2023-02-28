@@ -1,9 +1,8 @@
-
 public class PersonManager {
     public void List(){
-        System.out.println("Listelendi");
+        System.out.println("Müşteri liistelendi");
     }
     public void Add(){
-        System.out.println("Eklendi");
+        System.out.println("Müşteri Eklendi");
     }
 }
