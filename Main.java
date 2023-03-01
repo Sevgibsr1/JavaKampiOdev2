@@ -1,11 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        BaseCrediManager[] krediManagers = new BaseCrediManager[]
-        (new OgretmenKrediManager(), new TarımKrediManager());
+        WomanGameCalculator womanGameCalculator = new WomanGameCalculator();
+        womanGameCalculator.hesapla();
+        womanGameCalculator.gameOver();
 
-        for (BaseCrediManager krediManager : krediManagers){
-            System.out.println(krediManager.hesapla(1000));
-        }
-
-    }
-}
+// abstract classlar asla newlenemez
+    }}
