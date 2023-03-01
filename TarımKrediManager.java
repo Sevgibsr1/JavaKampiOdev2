@@ -1,2 +1,3 @@
-public class TarımKrediManager extends BaseKrediManager{
+public class TarımKrediManager extends BaseCrediManager{
+
 }

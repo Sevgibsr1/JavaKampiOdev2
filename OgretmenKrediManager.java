@@ -1,2 +1,3 @@
-public class OgretmenKrediManager extends BaseKrediManager{
+public class OgretmenKrediManager extends BaseCrediManager{
+
 }
