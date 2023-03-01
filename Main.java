@@ -1,13 +1,11 @@
 public class Main {
+
     public static void main(String[] args) {
-    Customer customer = new Customer();
-    Employee employee = new Employee();
+    OgretmenKrediManager ogretmenKrediManager= new OgretmenKrediManager();
+    ogretmenKrediManager.Hesapla();
 
-
-    EmployeeManager employeeManager= new EmployeeManager();
-    CustomerManager customerManager= new CustomerManager();
-
-
+    KrediUI krediUI = new KrediUI();
+    krediUI.KrediHesapla(new AskerKredisiManager());
 
     }}
 
