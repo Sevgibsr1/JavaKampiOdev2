@@ -1,11 +1,12 @@
 public class Main {
-
     public static void main(String[] args) {
-    OgretmenKrediManager ogretmenKrediManager= new OgretmenKrediManager();
-    ogretmenKrediManager.Hesapla();
 
-    KrediUI krediUI = new KrediUI();
-    krediUI.KrediHesapla(new AskerKredisiManager());
+//        EmailLogger logger = new EmailLogger();
+//        logger.Log("Log mesajı");
 
-    }}
 
+        CustomerManager customerManager= new CustomerManager(new DatabaseLogger());
+        customerManager.add();
+
+    }
+}
