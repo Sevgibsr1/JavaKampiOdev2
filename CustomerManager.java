@@ -1,10 +1,13 @@
 public class CustomerManager {
 
-    BaseDatabaseManager databaseManager;
+    private ICustomerDal customerDal;
 
+    public CustomerManager(ICustomerDal customerDal){
+        this.customerDal = customerDal;
+    }
 
-    public void getCustomers(){
-        databaseManager.getData();
-
+    public void add(){
+        //iş kodları
+        customerDal.Add();
     }
 }
