@@ -1,11 +1,12 @@
 public class ProductManager {
-public void Add(Product product){
-    System.out.println("Ürün eklendi " + product.name);
+    public void add(Product product){
+        ProductValidator validator = new ProductValidator();
+        if (validator.isValid(product)){
+            System.out.println("Eklendi");
+        }else {
+            System.out.println("Ürün bilgileri geçersizdir");
+        }
 
-}
-public void Add2(int id, String name, String description, int stockAmount, double price, String renk){
 
-}
-
-
+    }
 }
